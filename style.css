@@ -1,0 +1,81 @@
+.todo__form {
+  display: flex;
+  gap: 12px;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.todo__input {
+  width: 90%;
+  padding: 8px 10px;
+  border: 1px solid #969da3;
+  border-radius: 3px;
+  color: #333;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.todo__submit {
+  width: 20%;
+  cursor: pointer;
+}
+
+.todo__input::placeholder {
+  color: #999;
+}
+
+.todo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.todo__title {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 4rem 0;
+}
+
+.todo__form {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.todo__items {
+  max-width: 400px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.todo__item {
+  display: flex;
+  align-items: center;
+  gap: 0 .5em;
+  position: relative;
+  margin-bottom: .5em;
+  cursor: pointer;
+}
+
+.todo__item::before {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 2px solid #d6dde3;
+  content: '';
+}
+
+.todo__item.checked::after {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  transform: rotate(45deg);
+  width: 5px;
+  height: 10px;
+  border: solid #2589d0;
+  border-width: 0 3px 3px 0;
+  content: '';
+}
+
+.todo__checkbox {
+  display: none;
+}
