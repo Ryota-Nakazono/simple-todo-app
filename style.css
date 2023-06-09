@@ -64,6 +64,11 @@
   content: '';
 }
 
+.todo__item.checked {
+  color: #d6dde3;
+  text-decoration: line-through;
+}
+
 .todo__item.checked::after {
   position: absolute;
   top: 5px;

@@ -14,15 +14,13 @@
     <h1 class="todo__title">TODOリスト</h1>
 
     <form id="todo-form" class="todo__form">
-      <input class="todo__input" type="text" placeholder="TODOを入力してください">
+      <input id="todo-input" class="todo__input" type="text" placeholder="TODOを入力してください">
       <button class="todo__submit" type="submit">追加</button>
     </form>
 
-    <ul id="todo-items" class="todo__items">
-      <li class="todo__item checked"><input class="todo__checkbox" type="checkbox">TODO1</li>
-      <li class="todo__item"><input class="todo__checkbox" type="checkbox">TODO2</li>
-      <li class="todo__item"><input class="todo__checkbox" type="checkbox">TODO3</li>
-    </ul>
+    <ul id="todo-items" class="todo__items"></ul>
+
+    <script src="main.js"></script>
   </main>
 </body>
 
