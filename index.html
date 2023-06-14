@@ -18,6 +18,13 @@
       <button class="todo__submit" type="submit">追加</button>
     </form>
 
+    <div id="todo-edit-form-container" class="todo__editFormContainer hidden">
+      <form id="todo-edit-form" class="todo__editForm">
+        <input id="todo-edit-input" class="todo__editInput" type="text" placeholder="編集内容を入力してください">
+        <button class="todo__editSubmit" type="submit">更新</button>
+      </form>
+    </div>
+
     <ul id="todo-items" class="todo__items"></ul>
 
     <script src="main.js"></script>
