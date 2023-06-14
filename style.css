@@ -64,7 +64,7 @@
   content: '';
 }
 
-.todo__item.checked {
+.todo__item.checked .todo__text {
   color: #d6dde3;
   text-decoration: line-through;
 }
@@ -83,4 +83,48 @@
 
 .todo__checkbox {
   display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.todo__editFormContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo__editFormContainer.hidden {
+  display: none;
+}
+
+.todo__editForm {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.todo__editInput {
+  width: 90%;
+  padding: 8px 10px;
+  border: 1px solid #969da3;
+  border-radius: 3px;
+  color: #333;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.todo__editSubmit {
+  width: 20%;
+  cursor: pointer;
 }
